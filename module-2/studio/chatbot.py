@@ -4,7 +4,7 @@ from langgraph.graph import MessagesState
 from langgraph.graph import StateGraph, START, END
 
 # We will use this model for both the conversation and the summarization
-from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
 model = ChatOpenAI(model="gpt-4o", temperature=0) 
 
 # State class to store messages and summary
