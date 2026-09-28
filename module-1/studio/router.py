@@ -14,7 +14,7 @@ def multiply(a: int, b: int) -> int:
     return a * b
 
 # LLM with bound tool
-llm = ChatOllama(model="ollama.llama3.1:8b", temperature=0.1)
+llm = ChatOllama(model="llama3.1:8b", temperature=0.1)
 llm_with_tools = llm.bind_tools([multiply])
 
 # Node
